@@ -38,10 +38,10 @@ btnSend.addEventListener("click", () => {
   if (angle < 0 || angle > 180) {
     angle = 0;
     document.getElementById("p-ang").innerHTML = `0°`;
-    document.getElementById("alert").classList.add("alert");
+    document.getElementById("alert").className = "alert";
   } else {
     document.getElementById("p-ang").innerHTML = `${angle}°`;
-    document.getElementById("alert").classList.add("d-none");
+    document.getElementById("alert").className = "d-none";
   }
   writeServoData(servoId, angle);
   console.log("Si")
